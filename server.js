@@ -59,7 +59,7 @@ app.post('/',async(req ,res)=>{
                 });
                 let mailOptions = {
                     from: process.env.from_email,
-                    to: process.env.to_email, 
+                    to: email, 
                     subject: 'GenZeIctClass',
                     text: `Hi! There, Please follow the given link to verify your email 
                     http://localhost:8081/verify/${verificationToken}  Thanks`  
